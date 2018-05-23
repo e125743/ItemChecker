@@ -8,10 +8,11 @@ def cut(filepath):
     img = cv2.imread(filepath)
 
     #切り取り画像の左上のpixel
-    x, y = 800, 4050
+    x, y = 745, 3925
 
     #切り取り画像の幅と高さのpixel数
-    w, h = 250, 125
+    w = 250#1805
+    h = 115
 
     #画像から切り取り実行
     roi = img[y:y+h, x:x+w]

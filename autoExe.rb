@@ -6,5 +6,10 @@ end
 
 Dir.chdir('./' + ARGV[0])
 testFiles = Dir.glob('*')
+Dir.chdir('../')
 #puts testFiles 
 
+for fileName in testFiles do
+  puts "#{ARGV[0]}\/#{fileName}"
+  `python ./testCut.py #{ARGV[0]}\/#{fileName}`
+end
