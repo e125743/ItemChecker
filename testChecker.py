@@ -16,8 +16,13 @@ img = cv2.medianBlur(img,3)
 #色配列をグレースケールからBGR（OpenCV規格）へ変換。
 cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
 
+#'有'の場合のパラメータ
+#circles = cv2.HoughCircles(img,cv2.HOUGH_GRADIENT,1,20,
+#                            param1=30,param2=30,minRadius=10,maxRadius=0)
+#'無'の場合のパラメータ
 circles = cv2.HoughCircles(img,cv2.HOUGH_GRADIENT,1,20,
-                            param1=30,param2=30,minRadius=10,maxRadius=0)
+                            param1=28,param2=31,minRadius=10,maxRadius=0)
+
 print(type(circles))
 if type(circles) is not type(None):
   circles = np.uint16(np.around(circles))
