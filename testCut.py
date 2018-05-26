@@ -28,7 +28,7 @@ def cut(filepath):
     filename = filepath.split('/')[-1]
     #print(filename)
 
-    #画像を表示
+    #切り取った画像をウィンドウで出力。
     #cv2.imshow('detected circles',roi)
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()

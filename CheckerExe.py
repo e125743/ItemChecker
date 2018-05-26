@@ -18,14 +18,17 @@ def circleChecker(cutImage, fileName):
 
     saveDir = 'ResultData/'
     print(type(circles))
+    #丸が検出できた場合の処理。
     if type(circles) is not type(None):
       circles = np.uint16(np.around(circles))
+      #丸を描写。
       for i in circles[0,:]:
-        # draw the outer circle
+        #丸の曲線を緑色で描写。
         cv2.circle(cimg,(i[0],i[1]),i[2],(0,255,0),2)
-        # draw the center of the circle
+        #丸の中心点を赤色で描写。
         cv2.circle(cimg,(i[0],i[1]),2,(0,0,255),3)
       saveDir += 'NoMove/'
+    #丸が検出されなかった場合の処理。
     else:
       saveDir += 'Move/'
       cimg = cutImage
