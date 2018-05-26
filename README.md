@@ -1,7 +1,7 @@
 # ItemChecker
 
 # 概要
-アンケートや住居変更などの書類を自動で仕分けするためのプログラム。  
+アンケートや住居変更などの書類を自動で仕分けるためのプログラム。  
 特定項目（'有' か '無'）に丸が付けられているかどうかで書類を仕分けたいと試みています。
 
 # 環境
@@ -10,29 +10,29 @@ Ruby
 OpenCV
 
 # ソースの説明
-* testCut.py
+* testCut.py  
 書類の特定の箇所を切り出して表示する為のプログラム。  
 特定項目（’有’ か ‘無’）の部分が上手く切り出せるように適切な切り取りパラメータ（プログラム内のx, y, w, h）を探して下さい。
 ```
-mkdir Cutdata
+mkdir Cutdata #初回の一回のみ実行
 python testCut.py "テスト用画像ファイル"
 ```
 
-* testChecker.py
+* testChecker.py  
 特定項目に丸が付けられているかを判定する為のプログラム。  
 testCut.pyで切り取った画像で何度か試し、適切なパラメータ（プログラム内のcv2.HoughCirclesに与えるパラメータ）を探して下さい。
 ```
 python testChecker.py "testCut.pyで切り取った画像ファイル"
 ```
 
-* CheckerExe.py
+* CheckerExe.py  
 本番用のプログラム。  
 プログラム内のパラメータ（x, y, w, h, cv2.HoughCirclesに与えるパラメータ）をtestChecker.pyとtestCut.pyで探したパラメータにそれぞれ書き換えて下さい。  
 書類を特定項目に丸が付いている物（ResultData/Move）と付いていない物（ResultData/NoMove）に分けます。
 
-* autoExe.rb
+* autoExe.rb  
 実行用のプログラム。  
 ```
-mkdir ResultData
+mkdir ResultData #初回の一回のみ実行
 ruby autoExe.rb "仕分けしたい書類ファイルを入れたディレクトリ"
 ```
