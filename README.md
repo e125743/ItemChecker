@@ -73,7 +73,7 @@ python testMargin.py "testPatternCut.pyで切り取った丸が付いていな�
 実行用のプログラム。  
 丸検出を使ったプログラムを実行する時は25行目 ``#`python ./testPatternCut.py #{ARGV[0]}\/#{fileName}` ``  
 余白の違いを使ったプログラムを実行する時は27行目 ``#`python ./MarginChecker.py #{ARGV[0]}\/#{fileName}` ``  
-のコメントをそれぞれ外してから、下記のように実行して下さい。
+のコメントを外してから、下記のように実行して下さい。
 ```
 mkdir ResultData #初回の一回のみ実行
 ruby autoExe.rb "仕分けしたい書類ファイルを入れたディレクトリ"
