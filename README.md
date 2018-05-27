@@ -27,8 +27,10 @@ python testCut.py "テスト用画像ファイル"
 
 * testCircleChecker.py  
 特定項目に丸が付けられているかを判定する為のプログラム。  
-testCut.pyで切り取った画像で何度か試し、適切なパラメータ（プログラム内のcv2.HoughCirclesに与えるパラメータ）を探して下さい。  
-`python testCircleChecker.py "testCut.pyで切り取った画像ファイル"`
+testCut.pyで切り取った画像で何度か試し、適切なパラメータ（プログラム内のcv2.HoughCirclesに与えるパラメータ）を探して下さい。
+```
+python testCircleChecker.py "testCut.pyで切り取った画像ファイル"
+```
 
 * CircleChecker.py  
 本番用のプログラム。  
@@ -52,8 +54,10 @@ python testPatternCut.py "テスト用画像ファイル"
 ```
 
 * testMargin.py  
-画像をグレースケールで読み込んだ時の総ピクセル数を出力するプログラム。  
-`python testMargin.py "testPatternCut.pyで切り取った丸が付いていない画像ファイル"`
+画像をグレースケールで読み込んだ時の総ピクセル数を出力するプログラム。
+```
+python testMargin.py "testPatternCut.pyで切り取った丸が付いていない画像ファイル"
+```
 
 * MarginChecker.py  
 本番用のプログラム。  
