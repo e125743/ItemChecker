@@ -68,7 +68,7 @@ python testMargin.py "testPatternCut.pyで切り取った丸が付いていな�
 <br>
 <br>
   
-##### - 実行用プログラム
+### - 実行用プログラム
 * autoExe.rb  
 実行用のプログラム。  
 丸を丸検出を使ったプログラムを実行する時は25行目 `\#\`python ./testPatternCut.py #{ARGV[0]}\/#{fileName}\``  
