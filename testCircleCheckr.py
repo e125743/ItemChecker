@@ -21,7 +21,7 @@ cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
 #                            param1=30,param2=30,minRadius=10,maxRadius=0)
 #'無'の場合のパラメータ
 circles = cv2.HoughCircles(img,cv2.HOUGH_GRADIENT,1,20,
-                            param1=28,param2=31,minRadius=10,maxRadius=0)
+                            param1=22,param2=27,minRadius=10,maxRadius=0)
 
 print(type(circles))
 #丸が検出できた場合の処理。

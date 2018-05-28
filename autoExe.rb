@@ -22,7 +22,7 @@ Dir.chdir('../')
 for fileName in testFiles do
   puts "#{ARGV[0]}\/#{fileName}"
   #`python ./testCut.py #{ARGV[0]}\/#{fileName}`
-  #`python ./CircleChecker.py #{ARGV[0]}\/#{fileName}`
+  `python ./CircleChecker.py #{ARGV[0]}\/#{fileName}`
   #`python ./testPatternCut.py #{ARGV[0]}\/#{fileName}`
-  `python ./MarginChecker.py #{ARGV[0]}\/#{fileName}`
+  #`python ./MarginChecker.py #{ARGV[0]}\/#{fileName}`
 end

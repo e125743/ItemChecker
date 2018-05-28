@@ -14,7 +14,7 @@ def circleChecker(cutImage, fileName):
     #                            param1=30,param2=30,minRadius=10,maxRadius=0)
     #'無'の場合のパラメータ
     circles = cv2.HoughCircles(img,cv2.HOUGH_GRADIENT,1,20,
-                                param1=28,param2=31,minRadius=10,maxRadius=0)
+                                param1=22,param2=27,minRadius=10,maxRadius=0)
 
     saveDir = 'ResultData/'
     print(type(circles))
