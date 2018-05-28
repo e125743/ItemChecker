@@ -64,8 +64,8 @@ def patternCut(filepath):
     return filename, patternRoi
 
 def marginChecker(filename, patternRoi):
-   #丸が付いていない画像の総ピクセル数を判断基準に設定。
-   #testMargin.pyで出力した数値。
+    #丸が付いていない画像の総ピクセル数を判断基準に設定。
+    #testMargin.pyで出力した数値。
     nonCircle = 7069410
     saveDir = 'ResultData/'
 
