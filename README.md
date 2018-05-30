@@ -10,12 +10,11 @@
 Python2  
 Ruby  
 OpenCV
-
-# プログラムの説明
 <br>
 <br>
 <br>
   
+# プログラムの説明
 ### - 丸検出を使ったプログラム
 * testCut.py  
 書類の特定の箇所を切り出して表示する為のプログラム。  
@@ -54,7 +53,7 @@ python testPatternCut.py "テスト用画像ファイル"
 ```
 
 * testMargin.py  
-画像をグレースケールで読み込んだ時の総ピクセル数を出力するプログラム。
+画像をグレースケールで読み込んだ時のpixel数値の合計を出力するプログラム。
 ```
 python testMargin.py "testPatternCut.pyで切り取った丸が付いていない画像ファイル"
 ```
@@ -62,7 +61,7 @@ python testMargin.py "testPatternCut.pyで切り取った丸が付いていな�
 * MarginChecker.py  
 本番用のプログラム。  
 プログラム内のパラメータx, y, w, hをtestPatternCut.pyで探したパラメータに書き換えて下さい。  
-また、プログラム内のnonCircleの中に、丸が付いていない画像の総ピクセル数（testMargin.pyを使って算出した数値）を入れて下さい。  
+また、プログラム内のnonCircleの中に、丸が付いていない画像のpixel数値の合計（testMargin.pyを使って算出した数値）を入れて下さい。  
 書類を特定項目に丸が付いている物（ResultData/Move）と付いていない物（ResultData/NoMove）に分けます。
 <br>
 <br>

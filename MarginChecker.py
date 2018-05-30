@@ -64,13 +64,13 @@ def patternCut(filepath):
     return filename, patternRoi
 
 def marginChecker(filename, patternRoi):
-    #丸が付いていない画像の総ピクセル数を判断基準に設定。
+    #丸が付いていない画像のpixel数値の合計を判断基準に設定。
     #testMargin.pyで出力した数値。
-    nonCircle = 7069410
+    nonCircle = 7078241
     saveDir = 'ResultData/'
 
-    #判断基準より画像の総ピクセル数が小さい時且つ、
-    #判断基準と画像の総ピクセル数との差が丸の最小円周より大きい時の処理。
+    #判断基準より画像のpixel数値の合計が小さい時且つ、
+    #判断基準と画像のpixel数値の合計との差が丸の最小円周より大きい時の処理。
     if abs(nonCircle - np.sum(patternRoi)) > 255*60*3*2 and nonCircle > np.sum(patternRoi):
       saveDir += 'NoMove/'
     else:
