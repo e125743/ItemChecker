@@ -34,7 +34,7 @@ python testCircleChecker.py "testCut.pyで切り取った画像ファイル"
 * CircleChecker.py  
 本番用のプログラム。  
 プログラム内のパラメータ（x, y, w, h, cv2.HoughCirclesに与えるパラメータ）をtestCircleChecker.pyとtestCut.pyで探したパラメータにそれぞれ書き換えて下さい。  
-書類を特定項目に丸が付いている物（ResultData/Move）と付いていない物（ResultData/NoMove）に分けます。
+書類を特定項目に丸が付いている物（ResultData/NoMove）と付いていない物（ResultData/Move）に分けます。
 <br>
 <br>
 <br>
@@ -42,7 +42,7 @@ python testCircleChecker.py "testCut.pyで切り取った画像ファイル"
 ### - 余白の違いを使ったプログラム
 * testPatternCut.py  
 書類の特定項目の左縦枠、下横枠を削除した画像を作成するプログラム。  
-testCut.pyで特定項目の左縦枠と下横枠のみが上手く入るように適切な切り取りパラメータ（プログラム内のx, y, w, h）を探して下さい。  
+testCut.pyで特定項目の左縦枠と下横枠が上手く入るように適切な切り取りパラメータ（プログラム内のx, y, w, h）を探して下さい。  
 その後、testPatternCut.pyのプログラム内のパラメータx, y, w, hをtestCut.pyで探したパラメータに書き換えて下さい。  
 最後に、プログラム内のpatternRoiに入れる配列roiの添字  
 `underPixel-85:underPixel-10, leftPixel+10:leftPixel+400`  
@@ -62,7 +62,7 @@ python testMargin.py "testPatternCut.pyで切り取った丸が付いていな�
 本番用のプログラム。  
 プログラム内のパラメータx, y, w, hをtestPatternCut.pyで探したパラメータに書き換えて下さい。  
 また、プログラム内のnonCircleの中に、丸が付いていない画像のpixel数値の合計（testMargin.pyを使って算出した数値）を入れて下さい。  
-書類を特定項目に丸が付いている物（ResultData/Move）と付いていない物（ResultData/NoMove）に分けます。
+書類を特定項目に丸が付いている物（ResultData/NoMove）と付いていない物（ResultData/Move）に分けます。
 <br>
 <br>
 <br>
